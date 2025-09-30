@@ -24,7 +24,6 @@ def homologSearch(orthoGroups, gene, s1, s2, includeParalogs):
             if gene in s:
                 continue
             output.append([gene, s.split("|")[0], 'paralog'])
-    print(sourceStr, len(sourceStr), targetStr)
     if len(targetStr.split(", ")) == 1 and len(sourceStr) > 0:
         output.append([gene, targetStr.split("|")[0], 'ortholog'])
     elif len(sourceStr) > 0:
@@ -46,4 +45,5 @@ df = pd.DataFrame()
 for row in input:
     gene, s1, s2 = row[0],row[1],row[2]
     df = pd.concat([df, homologSearch(data, gene, s1, s2, includeParalogs)], axis=0)
+
 df.to_csv('output.csv', index=False)
