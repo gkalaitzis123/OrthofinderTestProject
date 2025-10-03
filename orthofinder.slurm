@@ -6,15 +6,15 @@
 #SBATCH --mem=128G
 #SBATCH --job-name=orthofinder
 #SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=gk2319@nyu.edu
+#SBATCH --mail-user={Your email}
 #SBATCH --output=slurm_%j.out
 #SBATCH --error=slurm_%j.err
 
 module purge
 module load orthofinder/2.5.4
 
-DATADIR="/scratch/$USER/orthofinderProject/orthofinderInput"
+DATADIR="{your path to orthofinderInput}/orthofinderInput"
 
 ls -lh "$DATADIR"/*.fa
 
-python /share/apps/orthofinder/2.5.4/orthofinder.py -f "$DATADIR" -t "$SLURM_CPUS_PER_TASK"
+python {your path to orthofinder}/orthofinder.py -f "$DATADIR" -t "$SLURM_CPUS_PER_TASK"
