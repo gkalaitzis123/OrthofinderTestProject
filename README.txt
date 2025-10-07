@@ -23,3 +23,12 @@ Orthogroups.csv shows the output of orthofinder on these 6 proteomes (originally
 script.py finds orthologs, co-orthologs, and paralogs using an input (input.csv for example), with a gene, source species, and target species/species of interest.
 The script outputs a table (output.csv for example) of gene of interest, the homolog found, and the relationship (ortholog, co-ortholog, paralog).
 
+TO EXECUTE FROM COMMAND LINE
+
+example - python script.py Orthogroups.tsv Input.csv 1
+
+ARGUMENTS
+Orthogroups.tsv - known orthogroups (from orthofinder output)
+Input.csv - table with with genes, source species, and target species/species of interest
+include paralogs (1 for true, 0 for false)
+
