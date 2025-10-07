@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import argparse
 
 #Takes a pandas dataframe of orthogroups, gene name, source species name, target species name, and whether or not you want paralogs,
 #Outputs a df with input gene, target species genes, and type of relationship in rows
@@ -34,16 +35,22 @@ def homologSearch(orthoGroups, gene, s1, s2, includeParalogs):
 
     return df
 
-#Inputs and parameters
-#data - csv with rows of orthogroups, each column represents a species, each cell contains all paralogs (directly from orthofinder output, Orthogroups.tsv)
-#input - csv with rows of queries consisting of gene name, source species, and target species (manually constructed)
-data = pd.read_csv("")
-input = pd.read_csv("").to_numpy()
-includeParalogs = False
+def main():
+  parser = argparse.ArgumentParser()
+  parser.add_argument("orthogroups", help="csv with rows of orthogroups, each column represents a species, each cell contains all paralogs (directly from orthofinder output)",type=str)
+  parser.add_argument("inputFile", help="csv with rows of queries consisting of gene name, source species, and target species (manually constructed)", type=str)
+  parser.add_argument("includeParalogs", help="0 for false, 1 for true",type=int)
+  args = parser.parse_args()
+  
+  data = pd.read_csv(args.orthogroups, sep='\t')
+  input = pd.read_csv(args.inputFile).to_numpy()
+  includeParalogs = args.includeParalogs
+  
+  df = pd.DataFrame()
+  for row in input:
+      gene, s1, s2 = row[0],row[1],row[2]
+      df = pd.concat([df, homologSearch(data, gene, s1, s2, includeParalogs)], axis=0)
+  df.to_csv('output.csv', index=False)
 
-df = pd.DataFrame()
-for row in input:
-    gene, s1, s2 = row[0],row[1],row[2]
-    df = pd.concat([df, homologSearch(data, gene, s1, s2, includeParalogs)], axis=0)
-
-df.to_csv('output.csv', index=False)
+if __name__ == "__main__":
+  main()
