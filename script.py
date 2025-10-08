@@ -37,7 +37,7 @@ def homologSearch(orthoGroups, gene, s1, s2, includeParalogs):
 
 def main():
   parser = argparse.ArgumentParser()
-  parser.add_argument("orthogroups", help="csv with rows of orthogroups, each column represents a species, each cell contains all paralogs (directly from orthofinder output)",type=str)
+  parser.add_argument("orthogroups", help="tsv with rows of orthogroups, each column represents a species, each cell contains all paralogs (directly from orthofinder output)",type=str)
   parser.add_argument("inputFile", help="csv with rows of queries consisting of gene name, source species, and target species (manually constructed)", type=str)
   parser.add_argument("includeParalogs", help="0 for false, 1 for true",type=int)
   args = parser.parse_args()
@@ -54,3 +54,4 @@ def main():
 
 if __name__ == "__main__":
   main()
+
