@@ -1,22 +1,27 @@
 import pandas as pd
 import numpy as np
+import math
 import argparse
 
 #Takes a pandas dataframe of orthogroups, gene name, source species name, target species name, and whether or not you want paralogs,
 #Outputs a df with input gene, target species genes, and type of relationship in rows
 def homologSearch(orthoGroups, gene, s1, s2, includeParalogs):
-    data = orthoGroups.to_numpy()
 
+    #ensuring that s1 column is before s2 column
+    data = pd.DataFrame()
+    for col in orthoGroups.columns:
+      if s1.lower() in col.lower():
+        data[col] = orthoGroups[col]
+    for col in orthoGroups.columns:
+      if s2.lower() in col.lower():
+        data[col] = orthoGroups[col]
+    data = data.to_numpy()
+    
     #find orthogroup of interest in orthogroups data
     sourceStr, targetStr = "", ""
     for row in data:
-        for s in row[1:]:
-            if type(s) == str and s2 in s:
-                targetStr = s
-            if type(s) == str and gene in s and s1 in s:
-                sourceStr = s
-        if len(sourceStr) > 0:
-            break
+      if type(row[0]) == str and gene in row[0]:
+        sourceStr, targetStr = row[0], row[1]
 
     #constructing output, gene name is always before first '|'
     output = []
@@ -37,7 +42,7 @@ def homologSearch(orthoGroups, gene, s1, s2, includeParalogs):
 
 def main():
   parser = argparse.ArgumentParser()
-  parser.add_argument("orthogroups", help="tsv with rows of orthogroups, each column represents a species, each cell contains all paralogs (directly from orthofinder output)",type=str)
+  parser.add_argument("orthogroups", help="csv with rows of orthogroups, each column represents a species, each cell contains all paralogs (directly from orthofinder output)",type=str)
   parser.add_argument("inputFile", help="csv with rows of queries consisting of gene name, source species, and target species (manually constructed)", type=str)
   parser.add_argument("includeParalogs", help="0 for false, 1 for true",type=int)
   args = parser.parse_args()
@@ -50,8 +55,10 @@ def main():
   for row in input:
       gene, s1, s2 = row[0],row[1],row[2]
       df = pd.concat([df, homologSearch(data, gene, s1, s2, includeParalogs)], axis=0)
-  df.to_csv('output.csv', index=False)
+  df.to_csv('orthoSearch.csv', index=False)
 
 if __name__ == "__main__":
   main()
+
+
 
