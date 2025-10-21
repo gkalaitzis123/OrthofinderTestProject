@@ -1,0 +1,67 @@
+Alias,shared name,Annotation
+NPF6.4,At3g21670,nitrate transporter identical to nitrate transporter GB:CAB38706 [Arabidopsis thaliana] (68410.m02478)
+NPF4.4,At1g33440,nitrate transporter NTL1 -related similar to GI:3377517 from [Arabidopsis thaliana] (68408.m03749)
+NRT1.1,At1g12110,putative NPK1-related protein kinase 2 similar to nitrate chlorate transporter GB:Q05085 from (Arabidopsis thaliana) (68408.m01262)
+NRT2.2,At1g08100,"high-affinity nitrate transporter ACH2 identical to GB:AAC35884 from [Arabidopsis thaliana] (Plant J. 17 (5), 563-568 (1999)) (68408.m00797)"
+NRT2.6,At3g45060,"high-affinity nitrate transporter - like protein high-affinity nitrate transporter ACH1, Arabidopsis thaliana, EMBL:AF019748 (68410.m04497)"
+NRT2.7,At5g14570,"high affinity nitrate transporter - like protein high affinity nitrate transporter, Oryza sativa, EMBL:AB008519 (68412.m01576)"
+NPF4.5,At1g27040,nitrate transporter -related nitrate transporter NTL1 GB:AAC28086 GI:3377517 from [Arabidopsis thaliana] (68408.m02988)
+NRT2.3,At5g60780,"high affinity nitrate transporter protein - like probable high affinity nitrate transporter protein, Glycine max, PIR:T06237 (68412.m06901)"
+At5g62730,At5g62730,"nitrate transporter NTL1 - like protein nitrate transporter NTL1, Arabidopsis thaliana, EMBL:AF073361 (68412.m07120)"
+NPF4.1,At3g25260,nitrate transporter -related similar to nitrate transporter (NTL1) GB:AAC28086 [Arabidopsis thaliana] (68410.m02886)
+NRT1:2,At1g69850,nitrate transporter (NTL1) identical to nitrate transporter (NTL1) GB:AAC28086 [Arabidopsis thaliana] (68408.m07372)
+NPF4.2,At3g25280,nitrate transporter -related similar to nitrate transporter (NTL1) GB:AAC28086 [Arabidopsis thaliana] (68410.m02888)
+NPF6.2,At2g26690,nitrate transporter -related (68409.m02905)
+NRT2.1,At1g08090,high-affinity nitrate transporter NRT2 identical to GB:CAB09794 from [Arabidopsis thaliana] (68408.m00796)
+NRT2.5,At1g12940,nitrate transporter -related similar to GB:CAB09794 from [Arabidopsis thaliana] (68408.m01358)
+NRT2.4,At5g60770,"high-affinity nitrate transporter ACH1 - like protein high-affinity nitrate transporter ACH1, Arabidopsis thaliana, EMBL:AF019748 (68412.m06900)"
+NIA2,At1g37130,nitrate reductase 2 (NR2) identical to SP|P11035 Nitrate reductase 2 (formerly EC 1.6.6.1) (NR2) {Arabidopsis thaliana} (68408.m04223)
+NIA1,At1g77760,nitrate reductase 1 (NR1) identical to SP|P11832 Nitrate reductase 1 (formerly EC 1.6.6.1) (NR1){Arabidopsis thaliana} (68408.m08311)
+NIR1,At2g15620,ferredoxin--nitrite reductase (68409.m01603)
+AMT1;5,At3g24290,"ammonium transporter -related similar to GB:AAD54638 from [Arabidopsis thaliana] (Plant Cell (1999) 11 (5), 937-948) (68410.m02783)"
+AMT1;3,At3g24300,"ammonium transporter identical to GB:AAD54638 from [Arabidopsis thaliana] (Plant Cell (1999) 11 (5), 937-948) (68410.m02784)"
+AMT1;1,At4g13510,ammonium transport protein (AMT1) (68411.m01906)
+AMT1;2,At1g64780,"ammonium transporter, puitative similar to ammonium transporter GI:5880357 from [Arabidopsis thaliana] (68408.m06731)"
+AMT1;4,At4g28700,"ammonium transporter - like protein ammonium transporter, Lycopersicon esculentum, gb:X95098 (68411.m03738)"
+AMT2;1,At2g38290,ammonium transporter -related (68409.m04254)
+GDH1,At5g18170,glutamate dehydrogenase (EC 1.4.1.-) 1 (pir||S71217) (68412.m01967)
+GLN1.3,At3g17820,glutamine synthetase -related similar to Gln synthetase GB:228456 from [Arabidopsis thaliana] (68410.m02048)
+GDH3,At3g03910,glutamate dehydrogenase -related similar to glutamate dehydrogenase 1 GB:S71217 [Arabidopsis thaliana]; identical to putative glutamate dehydrogenase GB:AAF00627 [Arabidopsis thaliana] (68410.m00375)
+At1g51720,At1g51720,NADP-specific glutatamate dehydrogenase -related similar to NADP-specific glutatamate dehydrogenase (NADP-GDH) SP:P28724 [Giardia lamblia (Giardia intestinalis)] (68408.m05349)
+GDH2,At5g07440,glutamate dehydrogenase 2 (68412.m00785)
+NIT4,At5g22300,Nitrilase 4 (sp P46011) (68412.m02383)
+At4g08790,At4g08790,"nitrilase 1 like protein nitrilase 1 - Mus musculus,PID:g3228668 (68411.m01305)"
+NIT2,At3g44300,nitrilase 2 (68410.m04405)
+NIT3,At3g44320,nitrilase 3 (68410.m04408)
+NIT1,At3g44310,nitrilase 1 (68410.m04407)
+SP1L4,At5g15600,"nitrilase associated protein-related nitrilase associated protein NAP16kDa - Arabidopsis thaliana, EMBL:Z96936 (68412.m01686)"
+GLN1;5,At1g48470,glutamine synthetase -related similar to PIR:S18603 from [Arabidopsis thaliana] (68408.m04964)
+GSR2,At1g66200,glutamine synthetase -related similar to glutamine synthetase [Raphanus sativus] GI:1526564 (68408.m06892)
+GLN1;4,At5g16570,expressed protein (68412.m01787)
+GLN1;1,At5g37600,glutamate--ammonia ligase (68412.m04064)
+GLT1,At5g53460,"glutamate synthase [NADH], chloroplast, putative similar to SP|Q03460 Glutamate synthase [NADH], chloroplast precursor (EC 1.4.1.14) (NADH- GOGAT) {Medicago sativa} (68412.m06008)"
+HAOX2,At3g14150,"glycolate oxidase -related similar to GB:999542 from [Spinacia oleracea] (J. Biol. Chem. 264 (6), 3624-3628 (1989)), contains Pfam profile: PF01070 FMN-dependent dehydrogenase (68410.m01604)"
+HAOX1,At3g14130,"glycolate oxidase -related similar to GB:999542 from [Spinacia oleracea] (J. Biol. Chem. 264 (6), 3624-3628 (1989)), contains Pfam profile: PF01070 FMN-dependent dehydrogenase (68410.m01602)"
+GLU1,At5g04140,glutamate synthase [ferredoxin] (ferredoxin-dependent glutamate synthase/glu1/Fd-GOGAT 1) identical to ferredoxin-dependent glutamate synthase precursor [Arabidopsis thaliana] GI:3869251 (68412.m08201)
+GLU2,At2g41220,"glutamate synthase [ferredoxin], chloroplast (ferredoxin-dependent glutamate synthase/glu2/Fd-GOGAT 2) identical to SP|Q9T0P4 Ferredoxin-dependent glutamate synthase 2, chloroplast precursor (EC 1.4.7.1) (Fd-GOGAT 2) {Arabidopsis thaliana} (68409.m04611)"
+NODGS,At3g53180,"nodulin / glutamate-ammonia ligase - like protein MtN6 - nodulin 6, Medicago truncatula, EMBL:MET133118 (68410.m05427)"
+GLN2,At5g35630,"glutamate-ammonia ligase (EC 6.3.1.2) precursor, chloroplast (clone lambdaAtgsl1) (pir||S18600) (68412.m03829)"
+GAD3,At2g02000,glutamate decarboxylase (68409.m00115)
+GAD2,At1g65960,glutamate decarboxylase 2 (GAD 2) similar to glutamate decarboxylase (gad) GI:294111 from [Petunia hybrida] (68408.m06863)
+GAD1,At5g17330,glutamate decarboxylase 1 (GAD 1) sp|Q42521 (68412.m01869)
+GAD5,At3g17760,"glutamate decarboxylase similar to glutamate decarboxylase GB:Q07346 [Petunia x hybrida] (J. Biol. Chem. 268 (26), 19610-19617 (1993)) (68410.m02042)"
+GAD4,At2g02010,glutamate decarboxylase (68409.m00116)
+ASP4,At1g62800,"aspartate aminotransferase, cytoplasmic isozyme 2 (transaminase A/Asp4) identical to aspartate aminotransferase, cytoplasmic isozyme 2 SP:P46646 [Arabidopsis thaliana] (68408.m08832)"
+ASP2,At5g19550,"aspartate aminotransferase, cytoplasmic isozyme 1 (transaminase A/Asp2) identical to SP|P46645 Aspartate aminotransferase, cytoplasmic isozyme 1 (EC 2.6.1.1) (Transaminase A) {Arabidopsis thaliana} (68412.m02132)"
+ASP1,At2g30970,"aspartate aminotransferase, mitochondrial (transaminase A/Asp1) identical to SP|P46643 Aspartate aminotransferase, mitochondrial precursor (EC 2.6.1.1) (Transaminase A) {Arabidopsis thaliana} (68409.m03419)"
+ASP5,At4g31990,"aspartate aminotransferase, chloroplast (transaminase A/AAT1/Asp5) nearly identical to SP|P46248 Aspartate aminotransferase, chloroplast precursor (EC 2.6.1.1) (Transaminase A) {Arabidopsis thaliana} (68411.m05384)"
+AAT,At2g22250,"aspartate aminotransferase family similar to aspartate aminotransferase from Bacillus stearothermophilus SP|Q59228, Thermus aquaticus SP|O33822; contains Pfam profile PF00155 aminotransferase, classes I and II (68409.m02394)"
+ALD1,At2g13810,"aminotransferase family low similarity to Aromatic Aminotransferase from Pyrococcus horikoshii GP|14278621; contains Pfam profile PF00155 aminotransferase, classes I and II (68409.m01383)"
+AGD2,At4g33680,"aminotransferase family low similarity to Aromatic Aminotransferase from Pyrococcus horikoshii GP|14278621; contains Pfam profile PF00155 aminotransferase, classes I and II (68411.m04350)"
+ASN3,At5g10240,asparagine synthetase ASN3 (68412.m01098)
+ASN2,At5g65010,asparagine synthetase (gb|AAC72837.1) (68412.m08092)
+ASPGA1,At5g08100,asparaginase (68412.m00879)
+ASPGB1,At3g16150,L-asparaginase -related similar to L-ASPARAGINASE GB:P30364from [Lupinus angustifolius] (68410.m01835)
+At4g00590,At4g00590,asparaginase 2 family very low similarity to glycosylasparaginase [SP|P20933] from Homo sapiens; contains Pfam profile PF01112: Asparaginase 2 (68411.m00077)
+BZIP9-At5g24800,At5g24800,"bZIP protein, G/HBF-1-related light-induced protein CPRF-2 - Petroselinum crispum, PIR:S16321 (68412.m02676)"
+ASN1,At3g47340,glutamine-dependent asparagine synthetase (68410.m04771)
