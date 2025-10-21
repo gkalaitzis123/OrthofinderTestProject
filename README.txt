@@ -20,15 +20,34 @@ Run orthofinder on the directory using python {path to orthofinder}/orthofinder/
 Or, use a script similar (orthofinder.slurm) to mine if using SLURM.
 Orthogroups.csv shows the output of orthofinder on these 6 proteomes (originally a tsv).
 
-script.py finds orthologs, co-orthologs, and paralogs using an input (input.csv for example), with a gene, source species, and target species/species of interest.
-The script outputs a table (output.csv for example) of gene of interest, the homolog found, and the relationship (ortholog, co-ortholog, paralog).
+ORTHOSEARCH.PY
+
+orthoSearch.py finds orthologs, co-orthologs, and paralogs using an input (orthoSearchInput.csv for example), with a gene, source species, and target species/species of interest.
+The script outputs a table (orthoSearchOutput.csv for example) of gene of interest, the homolog found, and the relationship (ortholog, co-ortholog, paralog).
 
 TO EXECUTE FROM COMMAND LINE
 
-example - python script.py Orthogroups.tsv Input.csv 1
+example - python orthoSearch.py Orthogroups.tsv orthoSearchInput.csv 1
 
 ARGUMENTS
 Orthogroups.tsv - known orthogroups (from orthofinder output)
-Input.csv - table with with genes, source species, and target species/species of interest
+orthoSearchInput.csv- table with with genes, source species, and target species/species of interest
 include paralogs (1 for true, 0 for false)
+
+ORTHOPATHWAY.PY
+
+orthoPathway.py finds the orthogroup of a gene corresponding to a step in a metabolic pathway using a table (orthoPathwayInput.csv for example), with genes and their annotations.
+The script outputs a table (orthoPathwayOutput.csv for example) of gene of interest, the homolog found, and the relationship (ortholog, co-ortholog, paralog).
+
+TO EXECUTE FROM COMMAND LINE
+
+example - python orthoPathway.py Orthogroups.tsv orthoPathwayInput.csv Athaliana
+
+ARGUMENTS
+Orthogroups.tsv - known orthogroups (from orthofinder output)
+orthoPathwayInput.csv - table with with genes and their annotations (assumes shared name is second column, annotation is third column)
+Athaliana - source species name as written in orthoFinder output (not case sensitive)
+
+
+
 
