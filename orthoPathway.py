@@ -18,7 +18,7 @@ def orthoGroupSearch(orthoGroups, inputFile, sourceSpecies):
     if len(col) == 0:
         raise ValueError("Source species not found in orthogroups dataframe columns")
     
-    #searches for row with gene of interest
+    #searches for any orthogroup with a gene of interest, inserts it in its index in the pathway
     column = orthoGroups[col]
     for i in range(len(column)):
         for gene in geneList:
@@ -45,3 +45,4 @@ def main():
 
 if __name__ == "__main__":
   main()
+
