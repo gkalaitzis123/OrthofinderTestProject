@@ -55,10 +55,11 @@ def main():
   for row in input:
       gene, s1, s2 = row[0],row[1],row[2]
       df = pd.concat([df, homologSearch(data, gene, s1, s2, includeParalogs)], axis=0)
-  df.to_csv('orthoSearch.csv', index=False)
+  df.to_csv('orthoSearchResults.csv', index=False)
 
 if __name__ == "__main__":
   main()
+
 
 
 
